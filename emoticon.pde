@@ -9,8 +9,6 @@ void setup(){
 }
 
 void draw(){
-  fill(255,255,0);
-
   cabeca();
   olho();
   if(estado==1){
@@ -24,6 +22,7 @@ void draw(){
 }
 
 public void cabeca(){
+  fill(255,255,0);
   ellipse(width*.5, height*.5, width*.75, height*.75);
 }
 
