@@ -15,8 +15,10 @@ void draw(){
   olho();
   if(estado==1){
     feliz();
+    pupilaFeliz();
   }else if(estado==0){
     triste();
+    pupilaTriste();
   }
   
 }
@@ -30,11 +32,19 @@ public void olho(){
     fill(255);
     ellipse(width*.375, height*.425, width*.15, height*.1);
     ellipse(width*.625, height*.425, width*.15, height*.1);
+}
+
+public void pupilaFeliz(){
     fill(0);
     ellipse(width*.375, height*.425, width*.05, height*.05);
     ellipse(width*.625, height*.425, width*.05, height*.05);
+    }
+    
+public void pupilaTriste(){
+    fill(0);
+    ellipse(width*.375, height*.449, width*.05, height*.05);
+    ellipse(width*.625, height*.449, width*.05, height*.05);
 }
-
 public void feliz(){
   fill(255, 0, 0);
   arc(width*.5, height*.625, width*.4, height*.25, 0, 3.14);
